@@ -20,6 +20,12 @@ Official implementation of the paper:
 - **Graph-enhanced LLM**: Injects social graph structure into LLM’s attention mechanism without full fine-tuning (uses LoRA).
 - **Unified Training Objective**: Casts diffusion prediction as an autoregressive sequence generation task compatible with LLM pretraining.
 
+## 📈 Main Results (Information Diffusion Prediction)
+### Information Diffusion Prediction
+
+
+### Generalization Evaluation of Different LLMs
+
 ## ▶️ Quick Start
 
 ### 📁 Project Structure
