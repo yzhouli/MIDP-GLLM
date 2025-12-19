@@ -86,7 +86,7 @@ We compare IDP-LLM against seven baselines: [DyHGCN](https://link.springer.com/c
 ### Installation
 
 ```bash
-git clone https://github.com/yourname/IDP-LLM.git
+git clone https://github.com/yzhouli/IDP-LLM.git
 cd IDP-LLM
 pip install -r requirements.txt
 python run.py
