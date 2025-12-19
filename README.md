@@ -22,10 +22,9 @@ Official implementation of the paper:
 
 ## 📈 Main Results (Information Diffusion Prediction)
 ### Information Diffusion Prediction
-![Information Diffusion Prediction](results/model_comparison.png)
-
+![Loading... Please check results/model_comparison.png.](results/model_comparison.png)
 ### Generalization Evaluation of Different LLMs
-
+![Loading... Please check results/model_LLM_eval.png.](results/model_LLM_eval.png)
 ## ▶️ Quick Start
 
 ### 📁 Project Structure
