@@ -22,6 +22,85 @@ Official implementation of the paper:
 
 ## ▶️ Quick Start
 
+## 📁 Project Structure
+├── data/
+│   ├── .DS_Store
+│   ├── christianity/
+│   │   ├── cascades.txt
+│   │   ├── edges.txt
+│   │   ├── idx2u.pickle
+│   │   ├── u2idx.pickle
+│   ├── douban/
+│   │   ├── cascades.txt
+│   │   ├── edges.txt
+│   │   ├── idx2u.pickle
+│   │   ├── u2idx.pickle
+│   ├── memetracker/
+│   │   ├── cascades.txt
+│   │   ├── edges.txt
+│   │   ├── idx2u.pickle
+│   │   ├── u2idx.pickle
+│   ├── pheme/
+│   │   ├── cascades.txt
+│   │   ├── edges.txt
+│   │   ├── idx2u.pickle
+│   │   ├── u2idx.pickle
+│   ├── weight/
+├── helpers/
+│   ├── BaseLoader.py
+│   ├── BaseRunner.py
+│   ├── __pycache__/
+│   │   ├── BaseLoader.cpython-310.pyc
+│   │   ├── BaseRunner.cpython-310.pyc
+├── layers/
+│   ├── Commons.py
+│   ├── GraphBuilder.py
+│   ├── TransformerBlock.py
+│   ├── __pycache__/
+│   │   ├── Commons.cpython-310.pyc
+│   │   ├── GraphBuilder.cpython-310.pyc
+│   │   ├── TransformerBlock.cpython-310.pyc
+├── log/
+├── models/
+│   ├── DyHGCN.py
+│   ├── Graph_LLM.py
+│   ├── Graph_LLM_Deepseek.py
+│   ├── Graph_LLM_GPT2.py
+│   ├── Graph_LLM_Llama.py
+│   ├── Graph_LLM_MobileLLM.py
+│   ├── IDP_LLM.py
+│   ├── IDP_LLM_LoRA.py
+│   ├── LLMNet.py
+│   ├── MIM.py
+│   ├── PMRCA.py
+│   ├── __pycache__/
+│   │   ├── DyHGCN.cpython-310.pyc
+│   │   ├── Graph_LLM.cpython-310.pyc
+│   │   ├── Graph_LLM_Deepseek.cpython-310.pyc
+│   │   ├── Graph_LLM_GPT2.cpython-310.pyc
+│   │   ├── Graph_LLM_Llama.cpython-310.pyc
+│   │   ├── Graph_LLM_MobileLLM.cpython-310.pyc
+│   │   ├── IDP_LLM.cpython-310.pyc
+│   │   ├── IDP_LLM_LoRA.cpython-310.pyc
+│   │   ├── LLMNet.cpython-310.pyc
+│   │   ├── MIM.cpython-310.pyc
+│   │   ├── PMRCA.cpython-310.pyc
+├── README.md
+├── requirements.txt
+├── run.py
+├── saved/
+├── temp.py
+├── utils/
+│   ├── Constants.py
+│   ├── Metrics.py
+│   ├── Optim.py
+│   ├── Utils.py
+│   ├── __pycache__/
+│   │   ├── Constants.cpython-310.pyc
+│   │   ├── Metrics.cpython-310.pyc
+│   │   ├── Optim.cpython-310.pyc
+│   │   ├── Utils.cpython-310.pyc
+
 ### Installation
 
 ```bash
