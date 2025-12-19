@@ -22,7 +22,8 @@ Official implementation of the paper:
 
 ## ▶️ Quick Start
 
-## 📁 Project Structure
+### 📁 Project Structure
+```bash
 ├── data/
 │   ├── .DS_Store
 │   ├── christianity/
