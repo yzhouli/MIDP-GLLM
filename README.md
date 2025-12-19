@@ -21,9 +21,9 @@ Official implementation of the paper:
 - **Unified Training Objective**: Casts diffusion prediction as an autoregressive sequence generation task compatible with LLM pretraining.
 
 ## 📈 Main Results (Information Diffusion Prediction)
-### Information Diffusion Prediction
+### - Information Diffusion Prediction
 ![Loading... Please check results/model_comparison.png.](results/model_comparison.png)
-### Generalization Evaluation of Different LLMs
+### - Generalization Evaluation of Different LLMs
 ![Loading... Please check results/model_LLM_eval.png.](results/model_LLM_eval.png)
 ## ▶️ Quick Start
 
