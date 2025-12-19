@@ -21,6 +21,7 @@ Official implementation of the paper:
 - **Unified Training Objective**: Casts diffusion prediction as an autoregressive sequence generation task compatible with LLM pretraining.
 
 ## 📈 Main Results (Information Diffusion Prediction)
+We compare IDP-LLM against seven baselines: [DyHGCN](https://doi.org/10.1145/3485447.3512196), [MS-HGAT](https://doi.org/10.1145/3539597.3570456), [MIM](https://doi.org/10.1145/3539597.3570432), [DSHCL](https://doi.org/10.1145/3511808.3557286), [SILN](https://dl.acm.org/doi/10.1145/3539618.3591738), [Ghidorah](https://dl.acm.org/doi/10.1145/3539618.3591785), and [PMRCA](https://dl.acm.org/doi/10.1145/3477495.3531870). We also evaluate with lightweight LLMs: [GPT-2](https://huggingface.co/openai-community/gpt2-large), [Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B), [DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B), [TinyLlama-1.1B](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0), and [MobileLLM-R1.5-950M](https://huggingface.co/facebook/MobileLLM-R1.5-950M).
 ### - Information Diffusion Prediction
 ![Loading... Please check results/model_comparison.png.](results/model_comparison.png)
 ### - Generalization Evaluation of Different LLMs
