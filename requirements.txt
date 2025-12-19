@@ -1,0 +1,4 @@
+transformers==4.55.2
+peft==0.16.0
+torch-geometric==2.6.1
+faiss-cpu==1.12.0
