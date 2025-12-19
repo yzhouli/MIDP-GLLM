@@ -24,8 +24,7 @@ Official implementation of the paper:
 
 ### 📁 Project Structure
 ```bash
-├── data/
-│   ├── .DS_Store
+├── data/    ## Public Datasets
 │   ├── christianity/
 │   │   ├── cascades.txt
 │   │   ├── edges.txt
@@ -48,59 +47,34 @@ Official implementation of the paper:
 │   │   ├── u2idx.pickle
 │   ├── weight/
 ├── helpers/
-│   ├── BaseLoader.py
-│   ├── BaseRunner.py
-│   ├── __pycache__/
-│   │   ├── BaseLoader.cpython-310.pyc
-│   │   ├── BaseRunner.cpython-310.pyc
+│   ├── BaseLoader.py   # Dataset Loading and Processing
+│   ├── BaseRunner.py   # Model Training, Validation, and Testing
 ├── layers/
 │   ├── Commons.py
 │   ├── GraphBuilder.py
 │   ├── TransformerBlock.py
-│   ├── __pycache__/
-│   │   ├── Commons.cpython-310.pyc
-│   │   ├── GraphBuilder.cpython-310.pyc
-│   │   ├── TransformerBlock.cpython-310.pyc
 ├── log/
 ├── models/
-│   ├── DyHGCN.py
+│   ├── DyHGCN.py  # DyHGCN Model
 │   ├── Graph_LLM.py
 │   ├── Graph_LLM_Deepseek.py
 │   ├── Graph_LLM_GPT2.py
 │   ├── Graph_LLM_Llama.py
 │   ├── Graph_LLM_MobileLLM.py
 │   ├── IDP_LLM.py
-│   ├── IDP_LLM_LoRA.py
+│   ├── IDP_LLM_LoRA.py  # IDP-LLM Model, Before use, **please verify that the llm_path parameter is correct.**
 │   ├── LLMNet.py
-│   ├── MIM.py
-│   ├── PMRCA.py
-│   ├── __pycache__/
-│   │   ├── DyHGCN.cpython-310.pyc
-│   │   ├── Graph_LLM.cpython-310.pyc
-│   │   ├── Graph_LLM_Deepseek.cpython-310.pyc
-│   │   ├── Graph_LLM_GPT2.cpython-310.pyc
-│   │   ├── Graph_LLM_Llama.cpython-310.pyc
-│   │   ├── Graph_LLM_MobileLLM.cpython-310.pyc
-│   │   ├── IDP_LLM.cpython-310.pyc
-│   │   ├── IDP_LLM_LoRA.cpython-310.pyc
-│   │   ├── LLMNet.cpython-310.pyc
-│   │   ├── MIM.cpython-310.pyc
-│   │   ├── PMRCA.cpython-310.pyc
-├── README.md
-├── requirements.txt
-├── run.py
-├── saved/
-├── temp.py
+│   ├── MIM.py     # MIM Model
+│   ├── PMRCA.py   # PMRCA Model
 ├── utils/
 │   ├── Constants.py
 │   ├── Metrics.py
 │   ├── Optim.py
 │   ├── Utils.py
-│   ├── __pycache__/
-│   │   ├── Constants.cpython-310.pyc
-│   │   ├── Metrics.cpython-310.pyc
-│   │   ├── Optim.cpython-310.pyc
-│   │   ├── Utils.cpython-310.pyc
+├── README.md
+├── requirements.txt
+├── run.py
+├── saved/
 ```
 
 ### Installation
