@@ -8,7 +8,7 @@
 
 Official implementation of the paper:  
 **"IDP-LLM: Graph-enhanced LLM-driven Information Diffusion Prediction"**  
-Accepted at **SIGIR 2025**
+<!-- Accepted at **SIGIR 2025** -->
 
 > We propose a novel framework that unifies large language models (LLMs) with social graph structures to predict information diffusion cascades through interest space alignment.
 
