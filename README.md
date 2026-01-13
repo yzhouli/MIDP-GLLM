@@ -1,4 +1,4 @@
-# IDP-LLM: Graph-enhanced LLM-driven Information Diffusion Prediction
+# IDP-GLLM: Interest Alignment Graph-aware LLM for Information Diffusion Prediction
 
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://python.org)
 [![Transformers 4.55.2](https://img.shields.io/badge/Transformers-4.55.2-red?logo=huggingface)](https://huggingface.co/transformers/)
@@ -7,7 +7,7 @@
 [![FAISS CPU 1.12.0](https://img.shields.io/badge/FAISS--CPU-1.12.0-green?logo=facebook)](https://github.com/facebookresearch/faiss)
 
 Official implementation of the paper:  
-**"IDP-LLM: Graph-enhanced LLM-driven Information Diffusion Prediction"**  
+**"IDP-GLLM: Interest Alignment Graph-aware LLM for Information Diffusion Prediction"**  
 <!-- Accepted at **SIGIR 2025** -->
 
 > We propose a novel framework that unifies large language models (LLMs) with social graph structures to predict information diffusion cascades through interest space alignment.
@@ -17,7 +17,7 @@ Official implementation of the paper:
 - **Interest Space Alignment**: Aligns user and topic embeddings into a socio-psychologically meaningful space via:
   - **Self-driven pattern**: Clustering-based contrastive learning for user interests.
   - **Group-driven pattern**: Structural consistency between users and their engaged topics.
-- **Graph-enhanced LLM**: Injects social graph structure into LLM’s attention mechanism without full fine-tuning (uses LoRA).
+- **Graph-aware LLM**: Injects social graph structure into LLM’s attention mechanism without full fine-tuning (uses LoRA).
 - **Unified Training Objective**: Casts diffusion prediction as an autoregressive sequence generation task compatible with LLM pretraining.
 
 ## 📈 Main Results
