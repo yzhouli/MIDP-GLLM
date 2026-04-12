@@ -20,6 +20,16 @@ Official implementation of the paper:
 - **Graph-aware LLM**: Injects social graph structure into LLM’s attention mechanism without full fine-tuning (uses LoRA).
 - **Unified Training Objective**: Casts diffusion prediction as an autoregressive sequence generation task compatible with LLM pretraining.
 
+## ⚠️ Important Requirements for Reproduction
+
+### 🔥 Critical Configuration Requirements:
+
+1. **Library Version Consistency**: 
+   > **⚠️ CRITICAL**: All code must use `transformers 4.55.2` version. Using other versions will cause the system to fail. This is essential for proper functionality.
+
+2. **Model Path Configuration**:
+   > **⚠️ CRITICAL**: You must manually modify the pre-trained LLM weight paths in the model files to match your local paths, otherwise loading will fail. Pay special attention to the `llm_path` parameter in the model files before running.
+
 ## 📈 Main Results
 We compare IDP-LLM against seven baselines: [DyHGCN](https://link.springer.com/chapter/10.1007/978-3-030-67664-3_21), [MS-HGAT](https://ojs.aaai.org/index.php/AAAI/article/view/20334), [MIM](https://ieeexplore.ieee.org/abstract/document/10994219/), [DSHCL](https://ieeexplore.ieee.org/abstract/document/11062122/), [SILN](https://dl.acm.org/doi/abs/10.1145/3711896.3736925), [Ghidorah](https://ojs.aaai.org/index.php/AAAI/article/view/33470), and [PMRCA](https://dl.acm.org/doi/abs/10.1145/3726302.3729883). We also evaluate with lightweight LLMs: [GPT-2](https://huggingface.co/openai-community/gpt2-large), [Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B), [DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B), [TinyLlama-1.1B](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0), and [MobileLLM-R1.5-950M](https://huggingface.co/facebook/MobileLLM-R1.5-950M).
 ### - Information Diffusion Prediction
