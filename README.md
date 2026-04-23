@@ -65,7 +65,7 @@ We compare IDP-LLM against seven baselines: [DyHGCN](https://link.springer.com/c
 │   │   ├── edges.txt
 │   │   ├── idx2u.pickle
 │   │   ├── u2idx.pickle
-│   ├── pheme/
+│   ├── Misderdect/
 │   │   ├── cascades.txt
 │   │   ├── edges.txt
 │   │   ├── idx2u.pickle
