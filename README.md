@@ -29,7 +29,7 @@ To address the **topological sparsity** of malicious spread found in traditional
 2. **Cascade Modeling**: Established diffusion paths by collecting user comment and repost reactions.
 3. **Relationship Enhancement**: Extracted multi-dimensional social ties (Following, Fans, Likes) to construct a structurally rich, multi-relational social graph.
 
-### 🔥 Due to dataset size limitations, the restructured version has been uploaded to [Kaggle](https://link.springer.com/chapter/10.1007/978-3-030-67664-3_21).
+### 🔥 Due to dataset size limitations, the restructured version has been uploaded to [Kaggle]https://www.kaggle.com/datasets/yangzhou32/misderdect).
 
 ## ⚠️ Important Requirements for Reproduction
 
