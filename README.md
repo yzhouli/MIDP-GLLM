@@ -29,6 +29,8 @@ To address the **topological sparsity** of malicious spread found in traditional
 2. **Cascade Modeling**: Established diffusion paths by collecting user comment and repost reactions.
 3. **Relationship Enhancement**: Extracted multi-dimensional social ties (Following, Fans, Likes) to construct a structurally rich, multi-relational social graph.
 
+### 🔥 Due to dataset size limitations, the restructured version has been uploaded to [Kaggle](https://link.springer.com/chapter/10.1007/978-3-030-67664-3_21).
+
 ## ⚠️ Important Requirements for Reproduction
 
 ### 🔥 Critical Configuration Requirements:
@@ -39,12 +41,6 @@ To address the **topological sparsity** of malicious spread found in traditional
 2. **Model Path Configuration**:
    > **⚠️ CRITICAL**: You must manually modify the pre-trained LLM weight paths in the model files to match your local paths, otherwise loading will fail. Pay special attention to the `llm_path` parameter in the model files before running.
 
-## 📈 Main Results
-We compare IDP-LLM against seven baselines: [DyHGCN](https://link.springer.com/chapter/10.1007/978-3-030-67664-3_21), [MS-HGAT](https://ojs.aaai.org/index.php/AAAI/article/view/20334), [MIM](https://ieeexplore.ieee.org/abstract/document/10994219/), [DSHCL](https://ieeexplore.ieee.org/abstract/document/11062122/), [SILN](https://dl.acm.org/doi/abs/10.1145/3711896.3736925), [Ghidorah](https://ojs.aaai.org/index.php/AAAI/article/view/33470), and [PMRCA](https://dl.acm.org/doi/abs/10.1145/3726302.3729883). We also evaluate with lightweight LLMs: [GPT-2](https://huggingface.co/openai-community/gpt2-large), [Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B), [DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B), [TinyLlama-1.1B](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0), and [MobileLLM-R1.5-950M](https://huggingface.co/facebook/MobileLLM-R1.5-950M).
-### - Information Diffusion Prediction
-![Loading... Please check results/model_comparison.png.](results/model_comparison.png)
-### - Generalization Evaluation of Different LLMs
-![Loading... Please check results/model_LLM_eval.png.](results/model_LLM_eval.png)
 ## ▶️ Quick Start
 
 ### 📁 Project Structure
