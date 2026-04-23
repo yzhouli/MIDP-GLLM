@@ -9,7 +9,7 @@
 Official implementation of the paper:  
 **"MIDP-GLLM: Domain-Adaptive Alignment Graph-aware LLM for Malicious Information Diffusion Prediction"**
 
-> 我们提出了一种融合图感知大语言模型的新范式框架，有效统一了恶意信息扩散预测中的语义深度与结构推理，解决了传统模型在稀疏拓扑场景下的表征困境。
+> We propose a novel paradigm that integrates Graph-aware Large Language Models (LLMs) to unify semantic depth and structural reasoning, addressing the representation challenges caused by extreme topological sparsity in malicious diffusion.
 
 ## 🌟 Key Ideas
 
