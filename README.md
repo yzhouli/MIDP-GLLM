@@ -97,12 +97,3 @@ To address the **topological sparsity** of malicious spread found in traditional
 ├── run.py
 ├── saved/
 ```
-
-### Installation
-
-```bash
-git clone https://github.com/yzhouli/IDP-LLM.git
-cd IDP-LLM
-pip install -r requirements.txt
-python run.py
-```
