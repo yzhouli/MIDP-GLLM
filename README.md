@@ -1,4 +1,4 @@
-# IDP-GLLM: Interest Alignment Graph-aware LLM for Information Diffusion Prediction
+# MIDP-GLLM: Domain-Adaptive Alignment Graph-aware LLM for Malicious Information Diffusion Prediction
 
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://python.org)
 [![Transformers 4.55.2](https://img.shields.io/badge/Transformers-4.55.2-red?logo=huggingface)](https://huggingface.co/transformers/)
@@ -7,18 +7,27 @@
 [![FAISS CPU 1.12.0](https://img.shields.io/badge/FAISS--CPU-1.12.0-green?logo=facebook)](https://github.com/facebookresearch/faiss)
 
 Official implementation of the paper:  
-**"IDP-GLLM: Interest Alignment Graph-aware LLM for Information Diffusion Prediction"**  
-<!-- Accepted at **SIGIR 2025** -->
+**"MIDP-GLLM: Domain-Adaptive Alignment Graph-aware LLM for Malicious Information Diffusion Prediction"**
 
-> We propose a novel framework that unifies large language models (LLMs) with social graph structures to predict information diffusion cascades through interest space alignment.
+> 我们提出了一种融合图感知大语言模型的新范式框架，有效统一了恶意信息扩散预测中的语义深度与结构推理，解决了传统模型在稀疏拓扑场景下的表征困境。
 
 ## 🌟 Key Ideas
 
-- **Interest Space Alignment**: Aligns user and topic embeddings into a socio-psychologically meaningful space via:
-  - **Self-driven pattern**: Clustering-based contrastive learning for user interests.
-  - **Group-driven pattern**: Structural consistency between users and their engaged topics.
-- **Graph-aware LLM**: Injects social graph structure into LLM’s attention mechanism without full fine-tuning (uses LoRA).
-- **Unified Training Objective**: Casts diffusion prediction as an autoregressive sequence generation task compatible with LLM pretraining.
+- **Domain-Adaptive Token Alignment**: Smoothly maps heterogeneous graph representations into the LLM's native token space through a two-stage mechanism:
+  - **Semantic-Cognitive Prototype Alignment**: Establishes semantic anchors via clustering-based contrastive learning to bridge the semantic domain gap between general knowledge and specific intent.
+  - **Cross-layer Topological Awareness**: Mitigates the over-smoothing problem in deep graph aggregation through cross-layer contrastive learning, preserving structural discriminability.
+- **Graph-aware Reasoning Architecture**: Innovatively redesigns the LLM's internal mechanisms to perceive social structures:
+  - **Graph-aware Multi-head Attention (MHGA)**: Explicitly injects social network topology into the attention computation to overcome the LLM's "structural blind spot".
+  - **Higher-order Dependency Capture**: Modulates attention operators with structural priors to precisely perceive social influence and homophily.
+- **Paradigm Shift**: Unlike traditional methods that fragment feature extraction and sequence prediction, our framework achieves deep integration through the unified internal mechanism of the LLM.
+- **Superior Generalization & Efficiency**: Demonstrates significant performance gains across various lightweight LLMs (e.g., Qwen3, DeepSeek, MobileLLM) while maintaining low inference latency.
+
+## 📊 Dataset Reconstruction (Misderdect)
+
+To address the **topological sparsity** of malicious spread found in traditional datasets like Douban, we reconstructed the Misderdect dataset:
+1. **Core Corpus Establishment**: Integrated verified rumor and fake news topics flagged by official platforms.
+2. **Cascade Modeling**: Established diffusion paths by collecting user comment and repost reactions.
+3. **Relationship Enhancement**: Extracted multi-dimensional social ties (Following, Fans, Likes) to construct a structurally rich, multi-relational social graph.
 
 ## ⚠️ Important Requirements for Reproduction
 
